@@ -1,17 +1,19 @@
 {
-  "name": "testserver",
-  "version": "1.0.0",
-  "description": "",
+  "name": "audiobridge-server",
+  "version": "4.2.1",
+  "private": true,
+  "description": "AudioBridge AM/FM real-time audio bridge and administration server",
   "main": "Server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "node Server.js",
+    "check": "node --check Server.js"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "type": "commonjs",
+  "engines": {
+    "node": ">=18.17.0"
+  },
   "dependencies": {
-    "ws": "^8.21.3"
+    "dotenv": "^16.4.7",
+    "ws": "^8.18.0",
+    "xlsx": "^0.18.5"
   }
 }
